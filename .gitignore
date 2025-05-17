@@ -172,3 +172,6 @@ cython_debug/
 
 # PyPI configuration file
 .pypirc
+
+cookies.txt
+bilibili.tv_cookies.txt
