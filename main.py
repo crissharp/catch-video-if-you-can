@@ -146,7 +146,7 @@ def progress_hook(d):
 
 
 # --- Interfaz gráfica ---
-
+__version__ = "1.0.0"
 root = tb.Window(themename="darkly")  # otros: cyborg, darkly, solar, etc.
 root.iconbitmap("icon.ico")
 selected_format_id = tk.StringVar()
@@ -156,7 +156,7 @@ audio_formats = []
 
 
 download_dir = os.getcwd()  # Por defecto, carpeta actual
-root.title("Catch Video if You Can")
+root.title(f"Catch Video if You Can v{__version__}")
 root.geometry("420x420")
 
 
@@ -201,6 +201,11 @@ status_label.pack(pady=5)
 progress_var = tk.StringVar()
 progress_label = tk.Label(root, textvariable=progress_var, fg="green")
 progress_label.pack()
+
+version_label = tb.Label(root, text=f"Version {__version__}", font=("Segoe UI", 8))
+version_label.pack(side="bottom", pady=5)
+
+
 
 
 root.mainloop()

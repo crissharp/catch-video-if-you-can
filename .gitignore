@@ -175,3 +175,4 @@ cython_debug/
 
 cookies.txt
 bilibili.tv_cookies.txt
+*.mp4
